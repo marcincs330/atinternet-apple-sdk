@@ -185,7 +185,7 @@ class TechnicalContext: NSObject {
     }
     
     /// Device OS (name + version)
-    class var operatingSystem: String {
+    @objc class var operatingSystem: String {
         get {
             #if os(watchOS)
             return String(format: "[%@]-[%@]", WKInterfaceDevice.current().systemName.removeSpaces().lowercased(), WKInterfaceDevice.current().systemVersion)
@@ -226,7 +226,7 @@ class TechnicalContext: NSObject {
     #endif
     
     /// Application identifier (eg. com.atinternet.testapp)
-    class var applicationIdentifier: String {
+     class var applicationIdentifier: String {
         get {
             let identifier = Bundle.main.infoDictionary!["CFBundleIdentifier"] as? String
             
@@ -279,7 +279,7 @@ class TechnicalContext: NSObject {
     
     #if os(iOS)
     /// Carrier
-    class var carrier: String {
+    @objc class var carrier: String {
         get {
             let networkInfo = CTTelephonyNetworkInfo()
             let provider = networkInfo.subscriberCellularProvider

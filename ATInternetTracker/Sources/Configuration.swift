@@ -138,13 +138,19 @@ class Configuration: NSObject {
     */
     override init() {
         super.init()
-        let bundle = Bundle(for: object_getClass(self))
+        guard let selfObject = object_getClass(self) else {
+            print("Default Tracker Configuration not found")
+            return
+        }
+        let bundle = Bundle(for: selfObject)
         let path = bundle.path(forResource: "DefaultConfiguration", ofType: "plist")
         if let optPath = path {
             let defaultConf = NSDictionary(contentsOfFile: optPath)
             if let optDefaultConf = defaultConf as? [String: String] {
                 parameters = optDefaultConf
             }
+        } else {
+            print("no path found for DefaultConfiguration file")
         }
     }
     

@@ -59,7 +59,7 @@ class Storage {
         let modelPath = bundle.path(forResource: "Tracker", ofType: "momd")
         let modelURL = URL(fileURLWithPath: modelPath!)
         
-        return NSManagedObjectModel(contentsOf: modelURL)!
+        return NSManagedObjectModel(contentsOf: modelURL)
     }()
     
     let persistentStoreCoordinator: NSPersistentStoreCoordinator?
