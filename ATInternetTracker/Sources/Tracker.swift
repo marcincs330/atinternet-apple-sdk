@@ -115,13 +115,13 @@ public enum HitParam: String {
 /// - normal: tracking in foreground
 /// - task: tracking in background
 /// - fetch: tracking in iOS fetching feature
-public enum BackgroundMode {
+@objc public enum BackgroundMode: Int {
     /// normal: tracking in foreground
-    case normal
+    case normal = 0
     /// task: tracking in background
-    case task
+    case task = 1
     /// fetch: tracking in iOS fetching feature
-    case fetch
+    case fetch = 2
 }
 
 // MARK: - Tracker Delegate
@@ -218,7 +218,7 @@ public class AutoTracker: Tracker {
     private var toolbar: SmartToolBarController?
     
     /// Token for authentication
-    public var token: String? {
+    @objc public var token: String? {
         get {
             return _token
         } set {
@@ -235,7 +235,7 @@ public class AutoTracker: Tracker {
     
     /// Enable LiveTagging. See http://livetagging.atinternet-solutions.com/
     /// You need to provide a token before enabling live tagging
-    public var enableLiveTagging: Bool {
+    @objc public var enableLiveTagging: Bool {
         get {
             return _enableLiveTagging
         } set {
@@ -263,7 +263,7 @@ public class AutoTracker: Tracker {
     
     /// Enables AutoTracking. Will send automatically click and screens hits.
     /// You can custom those hits by implementing IAutoTracker protocol in your ViewControllers
-    public var enableAutoTracking: Bool {
+    @objc public var enableAutoTracking: Bool {
         get {
             return _enableAutoTracking
         } set {

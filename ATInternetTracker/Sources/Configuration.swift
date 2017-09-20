@@ -65,6 +65,7 @@ public enum IdentifierTypeKey: String {
 }
 
 /// Tracker configuration keys helper - used to make easier Tracker creation by providing few static parameters
+@objcMembers
 public class TrackerConfigurationKeys: NSObject {
     /// sessionBackgroundDuration
     public static let SessionBackgroundDuration = "sessionBackgroundDuration"

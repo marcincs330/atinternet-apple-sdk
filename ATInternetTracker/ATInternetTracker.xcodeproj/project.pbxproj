@@ -739,9 +739,6 @@
 		8E9398B51D9583810065D58D /* SmartTrackerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9398B41D9583810065D58D /* SmartTrackerConfiguration.swift */; };
 		8EC97ED31D5A2CC1007360F3 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC97ED21D5A2CC1007360F3 /* APITests.swift */; };
 		8EDC3CF61D3E225100A14458 /* ApiS3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC3CF51D3E225100A14458 /* ApiS3.swift */; };
-		8EE42A1E1F698063004808FF /* ATReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47A5BE1D36215D00702747 /* ATReachability.swift */; };
-		8EE42A1F1F698064004808FF /* ATReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47A5BE1D36215D00702747 /* ATReachability.swift */; };
-		8EE42A201F698065004808FF /* ATReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47A5BE1D36215D00702747 /* ATReachability.swift */; };
 		8EFF4AF81D50D79C005DF2A7 /* DeviceRotationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF4AF71D50D79C005DF2A7 /* DeviceRotationEvent.swift */; };
 		8EFF4AF91D50D79C005DF2A7 /* DeviceRotationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFF4AF71D50D79C005DF2A7 /* DeviceRotationEvent.swift */; };
 /* End PBXBuildFile section */
@@ -1985,7 +1982,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F47A4C41D35446700702747 /* Audio.swift in Sources */,
-				8EE42A201F698065004808FF /* ATReachability.swift in Sources */,
 				4F47A4D01D35446700702747 /* CustomObject.swift in Sources */,
 				4F47A6B91D3CD75700702747 /* UIImageExtension.swift in Sources */,
 				4F47A6661D36425C00702747 /* DictionaryExtension.swift in Sources */,
@@ -2253,7 +2249,6 @@
 				4F47A8191D3D17FC00702747 /* LiveAudio.swift in Sources */,
 				4F47A83A1D3D192500702747 /* BackgroundTask.swift in Sources */,
 				4F47A8451D3D192C00702747 /* Plugin.swift in Sources */,
-				8EE42A1F1F698064004808FF /* ATReachability.swift in Sources */,
 				4F47A8131D3D17D000702747 /* Event.swift in Sources */,
 				4F47A7E71D3D134F00702747 /* AisleTests.swift in Sources */,
 				4F47A8111D3D17CD00702747 /* CustomVar.swift in Sources */,
@@ -2412,7 +2407,6 @@
 				8E6DD36A1F4DA8AE00E81E79 /* SocketIOClientConfiguration.swift in Sources */,
 				4F47A9271D3E2FE100702747 /* Tool.swift in Sources */,
 				4F47A9281D3E2FE100702747 /* CustomObjectTests.swift in Sources */,
-				8EE42A1E1F698063004808FF /* ATReachability.swift in Sources */,
 				4F47A9AA1D3E319900702747 /* RecognizerTests.m in Sources */,
 				4F47A9291D3E2FE100702747 /* SelfPromotionTests.swift in Sources */,
 				8E6DD3671F4DA8AE00E81E79 /* SocketEventHandler.swift in Sources */,
