@@ -275,7 +275,7 @@ public class AutoTracker: Tracker {
                     Configuration.smartSDKMapping = nil
                     AutoTracker.isConfigurationLoaded = true
                 } else {
-                    //fetchMappingConfig()
+                    fetchMappingConfig()
                 }
             }
             

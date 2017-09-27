@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 	s.name = "ATInternet-Apple-SDK"
-	s.version = '2.6.1'
+	s.version = '2.7.0'
 	s.summary = "AT Internet mobile analytics solution for Apple devices"
 	s.homepage = "https://github.com/at-internet/atinternet-apple-sdk"
 	s.documentation_url	= 'http://developers.atinternet-solutions.com/apple-en/getting-started-apple-en/operating-principle-apple-en/'
@@ -42,6 +42,8 @@ Pod::Spec.new do |s|
     "ATInternetTracker/Sources/SocketTypes.swift",
     "ATInternetTracker/Sources/SSLSecurity.swift",
     "ATInternetTracker/Sources/WebSocket.swift",
+    "ATInternetTracker/Sources/Compression.swift",
+    "ATInternetTracker/Sources/zlib/*"
 	]
 	$smart_sdk = [
 		"ATInternetTracker/Sources/UIApplicationContext.swift",
@@ -91,8 +93,8 @@ Pod::Spec.new do |s|
 		"ATInternetTracker/Sources/tvOSTracker.h",
 		"ATInternetTracker/Sources/watchOSTracker.h",
 		"ATInternetTracker/Sources/UILabelExtension.swift",
-        "ATInternetTracker/Sources/EventFactory.swift",
-        "ATInternetTracker/Sources/Sockets.swift"
+    "ATInternetTracker/Sources/EventFactory.swift",
+    "ATInternetTracker/Sources/Sockets.swift"
 	]
 
 	s.subspec 'Tracker' do |tracker|

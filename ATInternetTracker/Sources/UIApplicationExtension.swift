@@ -126,8 +126,7 @@ extension UIApplication {
     func shouldSendNow() -> Bool {
         let ctx = UIApplicationContext.sharedInstance
         if let view = ctx.currentTouchedView {
-            if  view.type == UIApplicationContext.ViewType.button ||
-                view.type == UIApplicationContext.ViewType.tableViewCell ||
+            if  view.type == UIApplicationContext.ViewType.tableViewCell ||
                 view.type == UIApplicationContext.ViewType.textField ||
                 view.type == UIApplicationContext.ViewType.navigationBar ||
                 view.type == UIApplicationContext.ViewType.backButton ||

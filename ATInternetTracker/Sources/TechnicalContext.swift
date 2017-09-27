@@ -199,24 +199,19 @@ class TechnicalContext: NSObject {
     
     /// Application localized name
     class var applicationName: String {
-        get {
-            let name = Bundle.main.infoDictionary!["CFBundleDisplayName"] as? String
-            
-            if let optName = name {
-                return optName
-            } else {
-                
-                if let localizedDic = Bundle.main.localizedInfoDictionary {
-                    let localizedName = localizedDic["CFBundleDisplayName"] as? String
-                    
-                    if let optLocalizedName = localizedName {
-                        return optLocalizedName
-                    }
-                }
+        let defaultAppName = TechnicalContext.applicationIdentifier
+        if let info = Bundle.main.infoDictionary,  let name = info["CFBundleDisplayName"] as? String {
+            if !name.isEmpty {
+                return name
             }
-            
-            return TechnicalContext.applicationIdentifier
         }
+        if let localizedDic = Bundle.main.localizedInfoDictionary, let name = localizedDic["CFBundleDisplayName"] as? String {
+            if !name.isEmpty {
+                return name
+            }
+        }
+        
+        return defaultAppName
     }
     
     #if os(iOS) && AT_SMART_TRACKER
@@ -230,12 +225,12 @@ class TechnicalContext: NSObject {
     /// Application identifier (eg. com.atinternet.testapp)
      class var applicationIdentifier: String {
         get {
-            let identifier = Bundle.main.infoDictionary!["CFBundleIdentifier"] as? String
+            let identifier = Bundle.main.infoDictionary?["CFBundleIdentifier"] as? String
             
             if let optIdentifier = identifier {
                 return String(format:"%@", optIdentifier)
             } else {
-                return ""
+                return "noApplicationIdentifier"
             }
         }
     }

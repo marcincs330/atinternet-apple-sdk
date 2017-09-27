@@ -679,6 +679,7 @@
 		4FF594701D3FB80A0004D336 /* tvOSTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF5946F1D3FB7FB0004D336 /* tvOSTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FF594721D3FB8690004D336 /* watchOSTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = 4FF594711D3FB8690004D336 /* watchOSTracker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4FFB609D1D3E7FD900586F9E /* ATInternet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47A4461D3541C500702747 /* ATInternet.swift */; };
+		8E000C3E1F78F77B00C4AACF /* ATReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47A5BE1D36215D00702747 /* ATReachability.swift */; };
 		8E5339831D3F82A80081445B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F47A7121D3D126500702747 /* SwiftyJSON.swift */; };
 		8E5339841D3F845F0081445B /* ApiS3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDC3CF51D3E225100A14458 /* ApiS3.swift */; };
 		8E54A8941E4A1F8D0059582A /* EventFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E54A8931E4A1F8D0059582A /* EventFactory.swift */; };
@@ -735,6 +736,7 @@
 		8E6DD3721F4DA8AE00E81E79 /* SocketTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DD3381F4D81C600E81E79 /* SocketTypes.swift */; };
 		8E6DD3731F4DA8AE00E81E79 /* SSLSecurity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DD3361F4D81C600E81E79 /* SSLSecurity.swift */; };
 		8E6DD3741F4DA8AE00E81E79 /* WebSocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E6DD33E1F4D81C700E81E79 /* WebSocket.swift */; };
+		8E82306F1F7BA99C00B750DC /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E82306E1F7BA99B00B750DC /* AppTests.swift */; };
 		8E88418C1DB5358D003BB11D /* SmartTrackerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9398B41D9583810065D58D /* SmartTrackerConfiguration.swift */; };
 		8E9398B51D9583810065D58D /* SmartTrackerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E9398B41D9583810065D58D /* SmartTrackerConfiguration.swift */; };
 		8EC97ED31D5A2CC1007360F3 /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC97ED21D5A2CC1007360F3 /* APITests.swift */; };
@@ -985,6 +987,7 @@
 		8E6DD3401F4D81C700E81E79 /* SocketAckManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketAckManager.swift; sourceTree = "<group>"; };
 		8E6DD3411F4D81C700E81E79 /* SocketIOClientConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketIOClientConfiguration.swift; sourceTree = "<group>"; };
 		8E6DD3421F4D81C700E81E79 /* SocketEngineWebsocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketEngineWebsocket.swift; sourceTree = "<group>"; };
+		8E82306E1F7BA99B00B750DC /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppTests.swift; path = Tests/AppTests.swift; sourceTree = "<group>"; };
 		8E9398B41D9583810065D58D /* SmartTrackerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartTrackerConfiguration.swift; sourceTree = "<group>"; };
 		8EC97ED21D5A2CC1007360F3 /* APITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APITests.swift; path = Tests/APITests.swift; sourceTree = "<group>"; };
 		8EDC3CF51D3E225100A14458 /* ApiS3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiS3.swift; sourceTree = "<group>"; };
@@ -1380,6 +1383,7 @@
 		4F47A8721D3D29DB00702747 /* AutoTracker */ = {
 			isa = PBXGroup;
 			children = (
+				8E82306E1F7BA99B00B750DC /* AppTests.swift */,
 				4F47A6F61D3D126500702747 /* EventManagerTests.swift */,
 				4F47A6FE1D3D126500702747 /* MathTests.swift */,
 				8EC97ED21D5A2CC1007360F3 /* APITests.swift */,
@@ -2473,6 +2477,7 @@
 				4F47A9491D3E2FE100702747 /* CustomVarTests.swift in Sources */,
 				4F47A9921D3E316B00702747 /* TapEvent.swift in Sources */,
 				4F47A98C1D3E316B00702747 /* ScreenOperation.swift in Sources */,
+				8E82306F1F7BA99C00B750DC /* AppTests.swift in Sources */,
 				4F47A94A1D3E2FE100702747 /* BusinessObject.swift in Sources */,
 				4F47A9A71D3E319900702747 /* NSObjectTests.swift in Sources */,
 				8E6DD35C1F4DA8AE00E81E79 /* Compression.swift in Sources */,
@@ -2505,6 +2510,7 @@
 				8E6DD36D1F4DA8AE00E81E79 /* SocketIOClientStatus.swift in Sources */,
 				4F47A9AB1D3E319900702747 /* RotatorTests.swift in Sources */,
 				4F47A9561D3E2FE100702747 /* UIImageExtension.swift in Sources */,
+				8E000C3E1F78F77B00C4AACF /* ATReachability.swift in Sources */,
 				4F47A9571D3E2FE100702747 /* BufferTests.swift in Sources */,
 				8E54A8E21E4B044D0059582A /* Sockets.swift in Sources */,
 				4F47A9A21D3E318E00702747 /* SmartToolbar.swift in Sources */,
